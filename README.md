@@ -7,9 +7,15 @@ Using a dataset of 45,376 police reported stops under Terry v. Ohio, 392 U.S. a(
 The first step in analyzing this large data set is to clean and organize the data.  Processes included removing extra spaces, removing data that would not be used, replacing dashes with "unknown", combining duplicate columns and creating dummies for all relevant variables.  In total, the revised dataset contained 41 demographic related columns.
 
 ## EDA
+After plotting some graphs, there were some features that stood out including age of officer, gender of officer and certain precincts.  
+![Optional Text](https://github.com/crissymae/TerryTrafficStops/blob/master/Precinct%20Bar%20Graph.png)
+
+However, after some thought, these particular features could be the majority of the police force.  Also, there is a huge imbalance of arrests vs no arrests, so that will need to be handled before moving forward with modeling.
 
 ## Dealing with Data Imbalance
+Looking at the target variable, ArrestFlag_Y, there is an obvious data imbalance.
 ![Optional Text](https://github.com/crissymae/TerryTrafficStops/blob/master/Before%20and%20After%20Smote.png)
+The first image is the original data count for the ArrestFlag_Y.  It is extremely important to find a technique to deal with imbalance as the model will not perform well when predicting, specifically for the minority class. So, I used the smote technique to even things out. Much better numbers to work with!
 
 
 
