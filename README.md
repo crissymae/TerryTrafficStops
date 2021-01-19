@@ -1,8 +1,14 @@
-# Phase 1 Project Templates and Examples
+# Terry Traffic Stop Arrest Analysis
 
-This repo contains templates and examples to help you get started with your Phase 1 Project. Each of these is in a separate branch as explained below.
+## Objective
+Using a dataset of 45,376 police reported stops under Terry v. Ohio, 392 U.S. a(1968), the objective is to find the demographic variables that most influence arresting a subject. I will then use this information to attempt to predict future arrests based on certain demographics.
 
-- The **template-mvp** branch is the template you should use to for your Phase 1 Project. MVP stands for Minimum Viable Product, but this isn't meant in a negative way - if your project uses this template, it will be functional and accessible.
+## First things First
+The first step in analyzing this large data set is to clean and organize the data.  Processes included removing extra spaces, removing data that would not be used, replacing dashes with "unknown", combining duplicate columns and creating dummies for all relevant variables.  In total, the revised dataset contained 41 demographic related columns.
+
+## Dealing with Data Imbalance
+
+
 
 - The **example-mvp** branch is an example project using the MVP template.
 
